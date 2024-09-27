@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Hanken Grotesk, "sans-arif";
+}
+html {
+  font-size: 62.5%;
+}
+.body {
+  background-color: hsl(221, 100%, 96%);
+}
+
+.container {
+  margin: 8rem auto;
+  margin-bottom: 4rem;
+  height: 45rem;
+  max-width: 63rem;
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: row;
+  /* box-shadow: 1rem 1rem 8rem 0rem rgba(0, 0, 0, 0.144); */
+  box-shadow: 0.2rem 0.2rem 4rem rgba(0, 0, 0, 0.144);
+}
+.first-c {
+  width: 50%;
+  background: linear-gradient(
+    to bottom,
+    hsl(245, 100%, 67%),
+    hsl(243, 91%, 54%)
+  );
+  border-radius: 2.5rem;
+}
+.result {
+  font-size: 2.1rem;
+  font-weight: 800;
+  display: flex;
+  justify-content: center;
+  margin: 2.8rem 0;
+  color: hsl(241, 100%, 89%);
+}
+.num {
+  margin: 0 auto;
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(
+    to bottom,
+    hsla(256, 72%, 46%, 1),
+    hsla(256, 72%, 46%, 0)
+  );
+  justify-content: center;
+  align-items: center;
+}
+.one {
+  font-size: 6.8rem;
+  color: #eee;
+  margin: 0rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+}
+.two {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.562);
+  font-weight: 400;
+}
+.grt {
+  color: rgba(255, 255, 255, 0.986);
+  font-size: 2.8rem;
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0 1.7rem 0;
+  font-weight: 600;
+}
+p {
+  font-size: 1.4rem;
+  color: rgba(255, 255, 255, 0.808);
+  /* margin-top: rem; */
+  text-align: center;
+  padding: 0 5.5rem;
+}
+
+.second-c {
+  width: 50%;
+  background-color: white;
+  /* background-color: aqua; */
+  border-top-right-radius: 2.5rem;
+  border-bottom-right-radius: 2.5rem;
+  padding: 3.2rem;
+}
+.sum {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+.flex-c {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+  margin-bottom: 3.3rem;
+}
+.item {
+  font-size: 1.6rem;
+  width: 100%;
+  padding: 1.5rem 1.3rem;
+  /* background-color: aqua; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.9rem;
+  transition: transform 0.6s ease;
+}
+.item:hover {
+  transform: translateY(-0.3rem);
+}
+
+button {
+  width: 100%;
+  padding: 1.4rem;
+  border: none;
+  background-color: hsl(224, 30%, 27%);
+  color: white;
+  font-size: 1.6rem;
+  border-radius: 554rem;
+  font-weight: 700;
+  cursor: pointer;
+  /* transition: background 2s ease; */
+  /* background: linear-gradient(to bottom, hsl(2, 83%, 21%), hsl(130, 91%, 54%));
+  */
+}
+button:hover {
+  background: linear-gradient(
+    to bottom,
+    hsl(245, 100%, 67%),
+    hsl(243, 91%, 54%)
+  );
+  /* transition: background 2s ease; */
+  /* background-color: #888; */
+}
+button:active {
+  background: linear-gradient(
+    to bottom,
+    hsl(245, 100%, 67%),
+    hsl(243, 91%, 54%)
+  );
+  box-shadow: 0.1rem 0.2rem 2rem rgba(0, 0, 0, 0.144);
+}
+button:visited {
+  background: linear-gradient(
+    to bottom,
+    hsl(245, 100%, 67%),
+    hsl(243, 91%, 54%)
+  );
+}
+
+.yellow {
+  background-color: hsla(39, 100%, 56%, 0.1);
+
+  color: hsla(39, 100%, 56%, 1);
+  font-weight: 600;
+}
+.red {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+  font-weight: 600;
+}
+.green {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+  font-weight: 600;
+}
+.blue {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+  font-weight: 600;
+}
+.icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+}
+.icon-img {
+  width: 1.6rem;
+  margin-right: 0.8rem;
+}
+strong {
+  font-weight: 900;
+  color: #555;
+  margin-right: 0.2rem;
+}
+.on-number {
+  color: #888;
+}
+@media (max-width: 29em) {
+  .container {
+    flex-direction: column;
+    margin: 0;
+    height: 82rem;
+    box-shadow: none;
+  }
+  .first-c {
+    width: 100%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 3.5rem;
+    border-bottom-right-radius: 3.5rem;
+    padding: 0 0 3rem 0;
+  }
+  .second-c {
+    width: 100%;
+    margin-bottom: 3rem;
+  }
+}
